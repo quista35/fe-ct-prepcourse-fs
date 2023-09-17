@@ -170,11 +170,17 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+var mesesPedidos = [];
+array.forEach(mes => { 
+   if( mes === "Enero" || mes === "Marzo" || mes === "Noviembre")
+      mesesPedidos.push(mes);
+}); if(mesesPedidos === 3){
+   return mesesPedidos;
+} else{ return( "No se encontraron los meses pedidos");
+}} 
+   
 
 
-
-
-}
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
