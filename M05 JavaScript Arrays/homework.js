@@ -156,8 +156,10 @@ for(let i = 0; i < array.length; i++); {
    } else{
            if( sonIguales = array[i])  {
          return true}
-         else{ 
-            return false}
+         else if(sonIguales =! array[i]){
+            return false;
+         }
+            
          }
          }
       }
@@ -174,9 +176,10 @@ var mesesPedidos = [];
 array.forEach(mes => { 
    if( mes === "Enero" || mes === "Marzo" || mes === "Noviembre")
       mesesPedidos.push(mes);
-}); if(mesesPedidos === 3){
+}); 
+if(mesesPedidos === 3){
    return mesesPedidos;
-} else{ return( "No se encontraron los meses pedidos");
+} else{ return "No se encontraron los meses pedidos";
 }} 
    
 
